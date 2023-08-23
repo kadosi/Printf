@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 					break;
 
 				case 's':
-					count += handleString(args);
+					count += handleString(args, buffer, &buff_ind);
 					break;
 
 				case 'r':

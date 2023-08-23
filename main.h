@@ -12,7 +12,7 @@ int handleDecimal(va_list args);
 int handleReversedString(va_list args);
 int my_putchar(char c);
 int _printf(const char *format, ...);
-int handleString(va_list args);
 int handleChar(va_list args);
+int handleString(va_list args, char buff[], int *buff_ind)
 
 #endif
