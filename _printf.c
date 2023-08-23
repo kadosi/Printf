@@ -54,6 +54,9 @@ int _printf(const char *format, ...)
 					count++;
 					break;
 
+				case 'b':
+					count += printBinary(va_arg(args, unsigned int));
+					break;
 				default:
 					my_putchar('%');
 					my_putchar(format[i]);
