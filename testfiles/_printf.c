@@ -21,6 +21,7 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
+
 			switch (format[i])
 			{
 				case 'c':
@@ -33,6 +34,11 @@ int _printf(const char *format, ...)
 
 				case 'r':
 					count += handleReversedString(args);
+					break;
+
+				case 'd':
+				case 'i':
+					count += handleDecimal(args);
 					break;
 
 				case '%':
