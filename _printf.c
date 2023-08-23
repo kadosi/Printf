@@ -60,6 +60,7 @@ int _printf(const char *format, ...)
 					count += 2;
 					break;
 			}
+			continue;
 		}
 		else
 		{
