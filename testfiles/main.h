@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-
+int printBinary(unsigned int num);
 int handleDecimal(va_list args);
 int handleReversedString(va_list args);
 int my_putchar(char c);
