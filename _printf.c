@@ -49,6 +49,11 @@ int _printf(const char *format, ...)
 					count++;
 					break;
 
+				case 'n':
+					print_newline();
+					count++;
+					break;
+
 				default:
 					my_putchar('%');
 					my_putchar(format[i]);
